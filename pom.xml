@@ -7,17 +7,30 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+  <properties>
+    <github.packages.url>https://maven.pkg.github.com/OWNER/REPO</github.packages.url>
+    <mvn-ref-test01.version>1.0.0-Final</mvn-ref-test01.version>
+  </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>com.devtest</groupId>
         <artifactId>mvn-ref-test01-bom</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>${mvn-ref-test01.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <repositories>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>${github.packages.url}</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
