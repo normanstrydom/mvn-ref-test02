@@ -1,14 +1,7 @@
-name: Maven release from GitHub Actions
+name: Maven build test from GitHub Actions
 
 on:
-  workflow_dispatch:
-    inputs:
-      releaseVersion:
-        description: 'Release version'
-        required: true
-      developmentVersion:
-        description: 'Development version'
-        required: true
+  workflow_dispatch
 
 permissions:
   contents: write
@@ -35,12 +28,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Release
+      - name: Build
         run: |
-          mvn -B -ntp release:prepare release:perform \
-            -DreleaseVersion=${{ github.event.inputs.releaseVersion }} \
-            -DdevelopmentVersion=${{ github.event.inputs.developmentVersion }} \
-            -Darguments="-Dgithub.packages.url=https://maven.pkg.github.com/${{ github.repository_owner }}" \
+          mvn clean install \
             -s .mvn/settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

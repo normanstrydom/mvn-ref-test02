@@ -1,22 +1,29 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.devtest</groupId>
   <artifactId>mvn-ref-test02</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>
     <github.packages.url>https://maven.pkg.github.com/normanstrydom</github.packages.url>
-    <mvn-ref-test01.version>1.0.4-SNAPSHOT</mvn-ref-test01.version>
+    <mvn-ref-test01.version>1.0.3-Final</mvn-ref-test01.version>
   </properties>
 
   <scm>
     <connection>scm:git:https://github.com/normanstrydom/mvn-ref-test02.git</connection>
     <developerConnection>scm:git:https://github.com/normanstrydom/mvn-ref-test02.git</developerConnection>
     <url>https://github.com/normanstrydom/mvn-ref-test02</url>
+    <tag>HEAD</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>${github.packages.url}</url>
+    </repository>
+  </distributionManagement>
 
   <dependencyManagement>
     <dependencies>
@@ -34,7 +41,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>${github.packages.url}</url>
+      <url>https://maven.pkg.github.com/normanstrydom/mvn-ref-test01</url>
     </repository>
   </repositories>
 
