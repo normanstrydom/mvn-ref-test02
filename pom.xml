@@ -9,7 +9,7 @@
 
   <properties>
     <github.packages.url>https://maven.pkg.github.com/normanstrydom</github.packages.url>
-    <mvn-ref-test01.version>1.0.4-SNAPSHOT</mvn-ref-test01.version>
+    <mvn-ref-test01.version>1.0.3-Final</mvn-ref-test01.version>
   </properties>
 
   <scm>
@@ -34,7 +34,7 @@
     <repository>
       <id>github</id>
       <name>GitHub Packages</name>
-      <url>${github.packages.url}</url>
+      <url>https://maven.pkg.github.com/normanstrydom/mvn-ref-test01</url>
     </repository>
   </repositories>
 
