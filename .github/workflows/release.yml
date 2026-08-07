@@ -40,7 +40,7 @@ jobs:
           mvn -B -ntp release:prepare release:perform \
             -DreleaseVersion=${{ github.event.inputs.releaseVersion }} \
             -DdevelopmentVersion=${{ github.event.inputs.developmentVersion }} \
-            -Darguments="-Dgithub.packages.url=https://maven.pkg.github.com/${{ github.repository_owner }}" \
+            -Darguments="-Dgithub.packages.url=https://maven.pkg.github.com/${{ github.repository }}" \
             -s .mvn/settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
