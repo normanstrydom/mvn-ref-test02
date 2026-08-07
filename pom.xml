@@ -8,9 +8,15 @@
   <packaging>jar</packaging>
 
   <properties>
-    <github.packages.url>https://maven.pkg.github.com/OWNER/REPO</github.packages.url>
-    <mvn-ref-test01.version>1.0.0-Final</mvn-ref-test01.version>
+    <github.packages.url>https://maven.pkg.github.com/normanstrydom</github.packages.url>
+    <mvn-ref-test01.version>1.0.4-SNAPSHOT</mvn-ref-test01.version>
   </properties>
+
+  <scm>
+    <connection>scm:git:https://github.com/normanstrydom/mvn-ref-test02.git</connection>
+    <developerConnection>scm:git:https://github.com/normanstrydom/mvn-ref-test02.git</developerConnection>
+    <url>https://github.com/normanstrydom/mvn-ref-test02</url>
+  </scm>
 
   <dependencyManagement>
     <dependencies>
