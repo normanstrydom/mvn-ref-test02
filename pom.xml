@@ -7,7 +7,7 @@
 
   <properties>
     <github.packages.url>https://maven.pkg.github.com/normanstrydom/mvn-ref-test02</github.packages.url>
-    <mvn-ref-test01.version>1.0.3-Final</mvn-ref-test01.version>
+    <mvn-ref-test01.version>1.0.8-Final</mvn-ref-test01.version>
   </properties>
 
   <scm>
