@@ -1,5 +1,16 @@
 # mvn-ref-test02
 
+##  Overview
+
+##  Reference projects
+
+*   [https://github.com/normanstrydom/mvn-ref-test01 - Simple library](https://github.com/normanstrydom/mvn-ref-test01)
+*   [https://github.com/normanstrydom/mvn-ref-test02 - User of simple library](https://github.com/normanstrydom/mvn-ref-test02)
+*   [https://github.com/normanstrydom/mvn-ref-test03 - Web app referencing test01 and 02](https://github.com/normanstrydom/mvn-ref-test03)
+*   [https://github.com/normanstrydom/mvn-ref-test-release-action - Action to standardise the release](https://github.com/normanstrydom/mvn-ref-test-release-action)
+
+##  Code setup
+
 This repository is a Maven test project that demonstrates a GitHub Actions release workflow and dependency consumption from GitHub Packages.
 
 ## Overview
