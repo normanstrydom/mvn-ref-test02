@@ -1,7 +1,10 @@
 name: Maven build from GitHub Actions
 
 on:
-  workflow_dispatch
+  pull_request:
+    types: [closed]
+    branches:
+      - deployment
 
 permissions:
   contents: write
@@ -9,6 +12,7 @@ permissions:
 
 jobs:
   build:
+    if: ${{ github.event.pull_request.merged == true }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
