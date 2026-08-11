@@ -2,7 +2,7 @@
 
 ##  Overview
 
-Refer - [https://github.com/normanstrydom/mvn-ref-test01 - Simple library](https://github.com/normanstrydom/mvn-ref-test01)
+Refer - [https://github.com/normanstrydom/mvn-ref-test01](https://github.com/normanstrydom/mvn-ref-test01)
 
 ##  Reference projects
 
