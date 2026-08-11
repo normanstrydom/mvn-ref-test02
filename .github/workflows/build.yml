@@ -1,4 +1,4 @@
-name: Maven build test from GitHub Actions
+name: Maven build from GitHub Actions
 
 on:
   workflow_dispatch
