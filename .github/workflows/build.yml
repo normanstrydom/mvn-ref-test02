@@ -27,10 +27,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Build
+      - name: Build and publish
         run: |
-          mvn clean install \
-            -Darguments="-Dgithub.packages.url=https://maven.pkg.github.com/${{ github.repository }}" \
+          mvn -B deploy \
+            -Dgithub.packages.url=https://maven.pkg.github.com/${{ github.repository }} \
             -s .mvn/settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
